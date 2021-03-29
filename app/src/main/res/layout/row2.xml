@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/srcHotelName"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="99dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginStart="99dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="HotelName"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000000"
+        android:textSize="17dp"
+        android:textStyle="normal" />
+
+    <ImageView
+        android:id="@+id/srcHotelImg"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp"
+        app:srcCompat="@mipmap/ic_zamzam_round" />
+
+    <TextView
+        android:id="@+id/srcHotelPrice"
+        android:layout_width="163dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/srcHotelImg"
+        android:layout_marginTop="64dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Price:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000000"
+        android:textSize="17dp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/srcHotelQuant"
+        android:layout_width="192dp"
+        android:layout_height="35dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/srcHotelPrice"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Quantity:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000000"
+        android:textSize="17dp"
+        android:textStyle="normal" />
+
+    <RatingBar
+        android:id="@+id/srcHotelRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="115dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="44dp"
+        android:isIndicator="true"
+        />
+
+    <!--<Button
+        android:id="@+id/hotelBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".30"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:text="Button"
+        android:layout_alignParentRight="true" />-->
+
+    <!--<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text=""
+        android:id="@+id/itmPrice"
+        android:layout_weight="90"
+        android:layout_alignBottom="@+id/itmName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    -->
+
+</RelativeLayout>

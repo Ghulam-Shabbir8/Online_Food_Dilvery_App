@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/cartHotelName"
+        android:layout_width="191dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="99dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginStart="99dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="HotelName"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000000"
+        android:textSize="17dp"
+        android:textStyle="normal" />
+
+    <ImageView
+        android:id="@+id/cartHotelImg"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp"
+        app:srcCompat="@mipmap/ic_zamzam_round" />
+
+    <TextView
+        android:id="@+id/priceTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/cartHotelQuant"
+        android:layout_marginStart="25dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Price:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000000"
+        android:textSize="17dp"
+        android:textStyle="normal"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="25dp" />
+
+    <TextView
+        android:id="@+id/cartHotelQuant"
+        android:layout_width="192dp"
+        android:layout_height="35dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="117dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Quantity:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000000"
+        android:textSize="17dp"
+        android:textStyle="normal"
+        android:layout_alignParentRight="true" />
+
+    <TextView
+        android:id="@+id/cartItemName"
+        android:layout_width="271dp"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/cartHotelName"
+        android:layout_marginTop="72dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Item Name"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000000"
+        android:textSize="17dp"
+        android:textStyle="normal"
+        android:layout_alignLeft="@+id/cartHotelName" />
+
+    <TextView
+        android:id="@+id/cartHotelPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/priceTxt"
+        android:layout_marginStart="71dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="PriceTxt"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000000"
+        android:textSize="17dp"
+        android:textStyle="normal"
+        tools:ignore="NotSibling"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="71dp" />
+
+    <Button
+        android:id="@+id/cartDelBtn"
+        android:layout_width="75dp"
+        android:layout_height="36dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="13dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/menu_button"
+        android:focusable="true"
+        android:inputType="textCapSentences"
+        android:onClick="delCartFunc"
+        android:text="Delete"
+        android:textColor="#ffffff"
+        android:textSize="18dp"
+        app:srcCompat="@drawable/addcart" />
+
+    <ImageView
+        android:id="@+id/cartItemImg"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@+id/cartItemName"
+        android:layout_alignEnd="@+id/cartHotelImg"
+        android:layout_marginBottom="0dp"
+        android:layout_marginEnd="9dp"
+        app:srcCompat="@drawable/food"
+        android:layout_alignRight="@+id/cartHotelImg"
+        android:layout_marginRight="9dp" />
+
+</RelativeLayout>

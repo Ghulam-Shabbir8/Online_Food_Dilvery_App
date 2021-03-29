@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/hotelName"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="99dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginStart="99dp"
+        android:layout_marginTop="10dp"
+        android:text="ten"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="17dp"
+        android:textStyle="normal"
+        android:textColor="#000000"
+        android:fontFamily="sans-serif-condensed"
+        />
+
+    <ImageView
+        android:id="@+id/hotelImg"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp"
+        app:srcCompat="@mipmap/ic_zamzam_round" />
+
+    <!--<Button
+        android:id="@+id/hotelBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".30"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:text="Button"
+        android:layout_alignParentRight="true" />-->
+
+    <!--<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text=""
+        android:id="@+id/itmPrice"
+        android:layout_weight="90"
+        android:layout_alignBottom="@+id/itmName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    -->
+
+</RelativeLayout>

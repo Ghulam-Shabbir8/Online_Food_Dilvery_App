@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchActivity"
+    android:background="@color/color8"
+    >
+
+
+    <ImageView
+        android:id="@+id/splashscreen"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        app:srcCompat="@mipmap/ic_launcher_foreground"
+        tools:ignore="VectorDrawableCompat" />
+
+
+    <TextView
+        android:id="@+id/searchTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="179dp"
+        android:text="Search Item"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="29dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="19dp"
+        android:textStyle="normal"
+        android:textColor="#000000"
+        android:fontFamily="sans-serif-condensed"
+        />
+
+    <!--<AutoCompleteTextView
+        android:id="@+id/searchField"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_alignStart="@id/searchTxt"
+        android:layout_marginRight="20dp"
+        android:layout_centerInParent="true"
+        android:hint="Enter item here"
+        android:completionThreshold="1"
+        android:layout_alignLeft="@id/searchTxt"
+        android:background="@color/color7"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        />-->
+
+    <AutoCompleteTextView
+        android:id="@+id/searchField"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_alignStart="@id/searchTxt"
+        android:layout_marginRight="20dp"
+        android:paddingLeft="5dp"
+        android:layout_centerInParent="true"
+        android:hint="Enter item here"
+        android:completionThreshold="1"
+        android:layout_alignLeft="@id/searchTxt"
+        android:background="@drawable/rounded_edittext_states"
+        android:maxLines="1"
+        android:inputType="text"
+        android:textColor="#000000"
+        android:textColorHint="#000000" />
+        <!--android:background="@color/color7"-->
+
+
+    <Button
+        android:id="@+id/searchBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="164dp"
+        android:text="Search"
+        android:background="@drawable/menu_button"
+        android:textColor="#ffffff"
+        android:textSize="18dp"
+        android:inputType="textCapSentences"
+        />
+
+    <!--<Button
+        android:id="@+id/testBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="58dp"
+        android:text="Activities" />-->
+</RelativeLayout>

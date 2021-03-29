@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/detHotelName"
+        android:layout_width="191dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="99dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginStart="99dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="HotelName"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000000"
+        android:textSize="17dp"
+        android:textStyle="normal" />
+
+    <ImageView
+        android:id="@+id/detHotelImg"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp"
+        app:srcCompat="@mipmap/ic_zamzam_round" />
+
+    <TextView
+        android:id="@+id/pTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/detHotelImg"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/detHotelImg"
+        android:layout_marginTop="64dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Price:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000000"
+        android:textSize="17dp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/detHotelQuant"
+        android:layout_width="192dp"
+        android:layout_height="35dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/detHotelPrice"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Quantity:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000000"
+        android:textSize="17dp"
+        android:textStyle="normal" />
+
+    <RatingBar
+        android:id="@+id/detHotelRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="115dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="44dp"
+        android:isIndicator="true"
+        />
+
+    <Button
+        android:id="@+id/cartBtn"
+        android:layout_width="75dp"
+        android:layout_height="36dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/detHotelName"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/menu_button"
+        android:focusable="true"
+        android:inputType="textCapSentences"
+        android:onClick="myClickHandler"
+        android:text="Add"
+        android:textColor="#ffffff"
+        android:textSize="18dp"
+        app:srcCompat="@drawable/addcart" />
+
+    <TextView
+        android:id="@+id/detHotelPrice"
+        android:layout_width="109dp"
+        android:layout_height="36dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/pTxt"
+        android:layout_marginStart="63dp"
+        android:text="No"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000000"
+        android:textSize="17dp"
+        android:textStyle="normal"
+        tools:ignore="NotSibling"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="63dp" />
+
+
+</RelativeLayout>

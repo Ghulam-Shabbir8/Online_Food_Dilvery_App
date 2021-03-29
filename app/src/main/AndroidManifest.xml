@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.hotelmanagement">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Food street"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        >
+
+        <!-- android:launchMode="singleTask" -->
+        <activity
+            android:name=".Splash"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- <activity android:name=".Splash" /> -->
+        <activity
+            android:name=".MainActivity"
+            android:label="Hotel Management" />
+        <activity
+            android:name=".ZamZam"
+            android:label="Zam Zam" />
+        <activity
+            android:name=".SearchActivity"
+            android:label="Search" />
+        <activity
+            android:name=".ZamZamDetail"
+            android:label="Menu" />
+        <activity
+            android:name=".ListActivity"
+            android:label="Hotels"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SearchDetail"
+            android:label="Detail" />
+        <activity
+            android:name=".ZamZamRating"
+            android:label="Zam Zam Rating" />
+        <activity android:name=".MMDetail" />
+        <activity android:name=".FCDetail" />
+        <activity android:name=".CharsiDetail" />
+        <activity android:name=".CMDetail" />
+        <activity android:name=".FKDetail" />
+        <activity android:name=".PHDetail" />
+        <activity android:name=".KBDetail" />
+        <activity android:name=".CCDetail" />
+        <activity android:name=".ADDetail" />
+        <activity android:name=".AdminPanel" />
+        <activity android:name=".ItemsActivity" />
+        <activity android:name=".ItemDetailActivity" />
+        <activity android:name=".CartActivity" />
+        <activity android:name=".OrderActivity" />
+        <activity android:name=".AdminOrders" />
+        <activity android:name=".AdminOrderDetail"></activity>
+    </application>
+
+</manifest>

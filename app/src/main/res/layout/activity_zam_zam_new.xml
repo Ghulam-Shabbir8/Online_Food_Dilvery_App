@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/hotelContact"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:layout_alignLeft="@+id/hotelInfo"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/hotelInfo"
+        android:layout_marginLeft="36dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="48dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="048-3723798"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000000"
+        android:textSize="19dp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toEndOf="@+id/zamZamInfo"
+        app:layout_constraintTop_toBottomOf="@+id/hotelInfo" />
+
+    <TextView
+        android:id="@+id/hotelLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/hotelInfo"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/hotelInfo"
+        android:layout_marginLeft="36dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="52dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Katchery Road Sgd"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000000"
+        android:textSize="19dp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toEndOf="@+id/zamZamInfo3"
+        app:layout_constraintTop_toBottomOf="@+id/hotelContact" />
+
+    <ImageView
+        android:id="@+id/zamZamInfo3"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/zamZamInfo"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/zamZamInfo"
+        android:layout_marginLeft="28dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/zamZamInfo"
+        app:srcCompat="@drawable/location" />
+
+    <ImageView
+        android:id="@+id/zamZamInfo2"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="28dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/zamZamSlider"
+        app:srcCompat="@drawable/info" />
+
+    <ImageView
+        android:id="@+id/zamZamInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/zamZamInfo2"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/zamZamInfo2"
+        android:layout_marginLeft="28dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/zamZamInfo2"
+        app:srcCompat="@drawable/contact" />
+
+    <TextView
+        android:id="@+id/hotelInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="36dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="48dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Zam Zam Hotel"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000000"
+        android:textSize="19dp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toEndOf="@+id/zamZamInfo2"
+        app:layout_constraintTop_toBottomOf="@+id/zamZamSlider" />
+
+
+    <ViewFlipper
+        android:id="@+id/zamZamSlider"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        tools:layout_editor_absoluteX="172dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:ignore="MissingConstraints"></ViewFlipper>
+
+    <Button
+        android:id="@+id/zamZamDetBtn"
+        android:layout_width="156dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/zamZamInfo3"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/zamZamInfo3"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/menu_button"
+        android:drawableLeft="@mipmap/ic_menu"
+        android:inputType="textCapSentences"
+        android:text="Menu"
+        android:textColor="#ffffff"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toStartOf="@+id/zamZamRatBtn"
+        app:layout_constraintHorizontal_bias="0.562"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hotelLocation" />
+
+    <Button
+        android:id="@+id/zamZamRatBtn"
+        android:layout_width="156dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/zamZamDetBtn"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/menu_button"
+        android:drawableLeft="@mipmap/ic_star"
+        android:inputType="textCapSentences"
+        android:text="Rating"
+        android:textColor="#ffffff"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hotelLocation" />
+
+
+
+</android.support.constraint.ConstraintLayout>
